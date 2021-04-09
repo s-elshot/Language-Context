@@ -14,20 +14,10 @@ function LanguageContextProvider({children}) {
         }
     }
 
-    // function setNl() {
-    //     if (language === "es") {
-    //         toggleLanguage("nl")
-    //     }
-    // }
-
     const data = {
-        test: "APP.js?: test",
-        jordan: "Jordan 1 - black toe",
-        adidas: "Yeezy boost 2",
         activeLanguage: language,
         setLan: setLan,
     }
-
 
     return (
         <LanguageContext.Provider value={data}>
@@ -35,7 +25,6 @@ function LanguageContextProvider({children}) {
         </LanguageContext.Provider>
     );
 }
-
 
 export default LanguageContextProvider;
 

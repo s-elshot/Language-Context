@@ -10,9 +10,8 @@ const {activeLanguage} = useContext(LanguageContext)
 
   return (
     <div className="page-container">
-
       <h2>{content[activeLanguage].aboutUs.title}</h2>
-      <p>Dit is je profielpagina!</p>
+      <p>{content[activeLanguage].aboutUs.profile}!</p>
       <img src={writers} alt="Bob & Betsy"/>
       <p>{content[activeLanguage].aboutUs.writers}</p>
     </div>
