@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,8 +10,10 @@ import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
 function App() {
+
   return (
-    <Router>
+
+      <Router>
         <Header />
         <Switch>
           <Route exact path="/">
@@ -24,7 +26,8 @@ function App() {
             <AllPlants />
           </Route>
         </Switch>
-    </Router>
+        </Router>
+
   );
 }
 
